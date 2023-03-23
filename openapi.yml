@@ -1,0 +1,43 @@
+openapi: 3.0.0
+info:
+  title: Partition User
+  version: 1.0.0
+servers:
+  - url: https://petstore.swagger.io
+paths:
+  /v2/user/{$randomUserName}:
+    get:
+      tags:
+        - General
+      summary: Get Random User
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /v2/user/{username}:
+    get:
+      tags:
+        - General
+      summary: Delete User
+      parameters:
+        - name: username
+          in: path
+          schema:
+            type: string
+          required: true
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /v2/user:
+    get:
+      tags:
+        - General
+      summary: Create User
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}

@@ -1,0 +1,9 @@
+{
+    "postmanCollection": {
+      "version": "2.1", 
+      "filePath": "/Users/lab0rat/Documents/GitHub/lab-testing-autotests/Partition User.postman_collection.json",
+      "metadata":{ 
+        "{{username}}": "lab0rat"
+      }
+    }
+}
